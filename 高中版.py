@@ -24,9 +24,9 @@ else:
 time.sleep(1)
 
 print("恭喜你做完了所有题目")
-print("总分：3分")
+print("总分：2分")
 print("分数："+str(fs))
-if fs>=2:
+if fs==2:
     print("你通过了测试")
 else:
     print("你未能通过测试")
