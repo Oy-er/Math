@@ -1,3 +1,5 @@
+#代码由AI根据无GUI版生成
+
 import tkinter as tk
 from tkinter import messagebox
 
@@ -59,3 +61,5 @@ submit_button.pack(pady=10)
 
 # 运行主循环
 root.mainloop()
+
+#隐藏题目：√-1
