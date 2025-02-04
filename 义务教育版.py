@@ -127,9 +127,9 @@ time.sleep(1)
 if czfx==3:
     print("恭喜你通过了测试！")
 elif czfx>=1:
-    print("你及格了，但还有"+str(3-czfx)+"分可以提高！")
+    print("你及格了，但还有"+str(3-czfx)+"分可以提高。")
 else:
-    print("你没有及格，再学学一段时间吧！")
+    print("你没有及格，再学学一段时间吧。")
 print("测试结束，祝你学习愉快！")
 time.sleep(1)
 
