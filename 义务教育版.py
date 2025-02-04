@@ -3,9 +3,9 @@ print('''欢迎来到
 数学计算测试！(一到九年级)''')
 
 import time
-time.sleep(1)
+time.sleep(2)
 print("开始小学测试")
-time.sleep(1)
+time.sleep(1.5)
 
 print("一年级")
 x = (input("37-12="))
@@ -87,7 +87,7 @@ time.sleep(3)
 
 czfx = 0
 print("开始初中测试")
-time.sleep(1)
+time.sleep(1.5)
 
 print("七年级")
 x = (input("(-5)+7-(-3)*2="))
