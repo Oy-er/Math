@@ -3,7 +3,7 @@ print('''欢迎来到
 数学闯关
 高中版''')
 import time
-time.sleep(2)
+time.sleep(1.5)
 
 print("必修一")
 x=(input("集合A={x|x^2-2x+1=0},则集合A="))
