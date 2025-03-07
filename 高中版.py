@@ -47,6 +47,7 @@ if a == "滚":
     else:
         print('滚')
 time.sleep(2)
+
 for i in range(2500):
     print('''加好友，获取更多题目 微信号：zzz29130109
 邮箱：q3324991557@outlook.com''')
