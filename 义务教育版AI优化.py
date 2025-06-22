@@ -49,12 +49,12 @@ def main():
     # 小学部分
     show_message("开始小学测试")
     primary_questions = [
-        ("一年级", "37-12=", 25),
-        ("二年级", "25*4=", 100),
-        ("三年级", "288/9/2=", 16),
-        ("四年级", "125*25*32=", 100000),
-        ("五年级", "1/2+1/4+1/4=", 1),
-        ("六年级+高数", "1/2+1/4+1/4+1/8+1/16+1/32+1/64+1/128...=", 1)
+        ("一", "37-12=", 25),
+        ("二", "25*4=", 100),
+        ("三", "288/9/2=", 16),
+        ("四", "125*25*32=", 100000),
+        ("五", "1/2+1/4+1/4=", 1),
+        ("六", "1/2+1/4+1/4+1/8+1/16+1/32+1/64+1/128...=", 1)
     ]
     for grade, question, answer in primary_questions:
         score_primary = ask_question(grade, question, answer, score_primary)
@@ -64,9 +64,9 @@ def main():
     # 初中部分
     show_message("开始初中测试")
     middle_questions = [
-        ("七年级", "(-5)+7-(-3)*2=", 8),
-        ("八年级", "27的立方根是", 3),
-        ("九年级", "(-4)/(-5)*(-0.2)=", -0.16)
+        ("七", "(-5)+7-(-3)*2=", 8),
+        ("八", "27的立方根是", 3),
+        ("九", "(-4)/(-5)*(-0.2)=", -0.16)
     ]
     for grade, question, answer in middle_questions:
         score_middle = ask_question(grade, question, answer, score_middle)
@@ -75,7 +75,7 @@ def main():
 
     # 隐藏题目
     show_message("隐藏题目")
-    score_primary = ask_question("隐藏题目", "1111111111*1111111111=", 1234567900987654321, score_primary)
+    score_primary = ask_question("？", "1111111111*1111111111=", 1234567900987654321, score_primary)
 
     # 总结
     total_score = score_primary + score_middle
