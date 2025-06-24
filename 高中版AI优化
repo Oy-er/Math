@@ -1,0 +1,71 @@
+import time
+
+def show_message(message, delay=1.5):
+    """显示消息并暂停"""
+    print(message)
+    time.sleep(delay)
+
+def ask_question(question, correct_answers):
+    """统一问答逻辑"""
+    answer = input(question).strip()
+    if answer in correct_answers:
+        print("对")
+        return 1
+    else:
+        print("错")
+        return 0
+
+def main():
+    """主程序"""
+    score = 0
+
+    # 欢迎信息
+    show_message('''欢迎来到
+数学闯关
+高中版''')
+
+    # 必修一
+    show_message("必修一")
+    score += ask_question("集合A={x|x^2-2x+1=0},则集合A=", ["{1}"])
+
+    # 必修二
+    show_message("必修二")
+    score += ask_question(
+        '''在复平面内，复数z=1-2i对应的点的坐标为 
+A. （1，2） B. （2，1） C. （1，-2） D. （2，-1）    
+答案：''', ["C", "c"]
+    )
+
+    # 显示分数
+    show_message("恭喜你做完了所有题目", delay=1)
+    total_score = 2
+    print(f"总分：{total_score}分")
+    print(f"分数：{score}")
+    if score == total_score:
+        print("你通过了测试")
+    else:
+        print("你未能通过测试")
+    time.sleep(2)
+
+    # 隐藏题目
+    show_message("隐藏题目")
+    a = input("没有隐藏题目：").strip()
+    if a == "滚":
+        a = input("√-1=").strip()
+        if a.lower() == "i":
+            print("对")
+        else:
+            print("滚")
+    time.sleep(2)
+
+    # 广告循环
+    for _ in range(5):  # 调整打印次数
+        print('''加好友，获取更多题目 微信号：zzz29130109
+邮箱：1. q3324991557@outlook.com
+     2. 3324991558@qq.com ''')
+        time.sleep(0.05)
+
+    show_message("The End", delay=10)
+
+if __name__ == "__main__":
+    main()
