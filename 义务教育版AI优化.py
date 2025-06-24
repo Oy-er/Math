@@ -102,7 +102,7 @@ def main():
         print("加好友，获取更多题目 微信号：zzz29130109")
         time.sleep(0.05)
 
-    print("The End")
+    print("The+End")
     time.sleep(5)
 
 if __name__ == "__main__":
