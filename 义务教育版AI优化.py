@@ -1,3 +1,4 @@
+#AI优化
 import time
 
 def show_message(message, delay=1.5):
