@@ -97,13 +97,15 @@ def main():
     else:
         print("啊就不对！")
 
-    # 广告信息
-    for _ in range(5):
-        print("加好友，获取更多题目 微信号：zzz29130109")
-        time.sleep(0.05)
+time.sleep(1)
 
-    print("The+End")
-    time.sleep(5)
+# 广告信息
+for _ in range(5):
+    print("加好友，获取更多题目 微信号：zzz29130109")
+    time.sleep(0.05)
+
+print("The+End")
+time.sleep(5)
 
 if __name__ == "__main__":
     main()
